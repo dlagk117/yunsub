@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>인류멸망시나리오</title>
+	<style type="text/css">
+		html{background: black;}
+		body{padding: 0; margin: 0; }
+		section {position: relative; height: 1000px;}
+		a { text-decoration:none }
+		.반대{position: absolute; width: 700px; display: block; left: 5%;}
+		.찬성{position: absolute; width: 700px; display: block; left: 50%;}
+		.반대_2{position: absolute; width: 800px; display: block; left: 15%;}
+		.hov:hover {opacity: 0.8;}
+
+		.giif{ display: block; position: absolute;  opacity: 0; }
+		@font-face { font-family: 'SunBatang-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+		div{font-family: 'SunBatang-Bold';}
+		footer{background: black;  font-family: 'SunBatang-Bold' margin-top: 220px; margin-bottom: 40px; color: white; text-align: center;padding: 15;}
+
+	</style>
+</head>
+<body>
+	<section>
+		<div style=" position: absolute; top: 700px; left: 5%; font-size: 3em;">
+	<a href="반대.html" style="color: white;">종교규제에 찬성한다</a></div>
+
+	 <div style="position: absolute; top: 700px; left: 65%; font-size: 3em;">
+	<a href="찬성.html" style="color: white;" >종교규제에 반대한다.</a> <br>
+	</div>
+	<div style="padding-top: 200px;">
+		<a href="반대_이야기.html"><img src="종교반대.png" class="반대 hov" id="before"></a>
+		<a href="찬성_이야기.html"><img src="종교찬성.png" class="찬성 hov" id="before2"></a>
+
+	</div>
+</section>
+
+<div >
+	<script type="text/javascript">
+		 	var A = 1
+			before.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after.style.opacity= "1";}else
+				{after.style.opacity= "0";}
+			
+			}
+			var B = 1
+			before2.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after2.style.opacity= "1";}else
+				{after2.style.opacity= "0";}
+			
+			}
+
+	</script>
+</div>
+</body>
+</html>
